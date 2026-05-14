@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scores</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+
+        @font-face {
+            font-family:digital ;
+            src: url(digital-dream.fat-narrow.ttf);
+        }
+       
+       body{
+        background-color: rgb(3, 3, 59);
+       
+       }
+
+       .container{
+        display: flex;
+        justify-content: space-around;
+       }
+
+    .home{
+     color: white;
+     font-family: "Roboto", sans-serif;
+
+}
+
+.guest{
+     color: white;
+     font-family: "Roboto", sans-serif;
+
+}
+
+#hm-scores {
+    color: red;
+    background-color: black;
+    border-radius: 5px;
+    padding: 21px 16px;
+    text-align: center;
+    font-family: digital;
+}
+
+#gu-scores {
+    color: red;
+    background-color: black;
+    border-radius: 5px;
+    padding: 21px 16px;
+    text-align: center;
+    font-family: digital;
+}
+
+button{
+    background-color: transparent;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 8px;
+    border: 1px solid rgb(248, 241, 241);
+    margin-bottom: 8px;
+}
+
+#reset{
+    display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+    </style>
+
+</head>
+<body>
+    
+<div class="container">
+    <div>
+        <h1 class="home">HOME</h1>
+        <h1 id="hm-scores">0</h1>
+        <button onclick="point()">+1</button>
+        <button onclick="points()">+2</button>
+        <button onclick="pointss()">+3</button>
+        <br>
+        <button onclick="nepoint()">-1</button>
+        <button onclick="nepoints()">-2</button>
+        <button onclick="nepointss()">-3</button>
+    </div>
+
+    <div>
+        <h1 class="home">GUEST</h1>
+        <h1 id="gu-scores">0</h1>
+        <button onclick="gupoint()">1</button>
+        <button onclick="gupoints()">+2</button>
+        <button onclick="gupointss()">+3</button>
+        <br>
+        <button onclick="negupoint()"> -1</button>
+        <button onclick="negupoints()"> -2</button>
+        <button onclick="negupointss()"> -3</button>
+    </div>
+    
+</div>
+
+<button onclick="reset()" id="reset">RESET</button>
+
+<script src="index.js"></script>
+
+</body>
+</html>
